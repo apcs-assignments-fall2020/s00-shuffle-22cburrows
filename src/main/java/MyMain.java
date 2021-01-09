@@ -11,8 +11,8 @@ public class MyMain {
         for (int i = 0; i < arr.length/2; i++){
             firstHalf[i] = arr[i];
         }
-        for (int i = arr.length/2; i < arr.length/2; i++){
-            secondHalf[i] = arr[i];
+        for (int i = arr.length/2; i < arr.length; i++){
+            secondHalf[i - arr.length/2] = arr[i];
         }
         for (int i = 0; i < arr.length/2; i++){
             arr[i*2] = firstHalf[i];
