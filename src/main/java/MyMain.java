@@ -4,7 +4,6 @@ public class MyMain {
 
     // Shuffles an array, using the perfect shuffle algorithm
     public static int[] perfectShuffle(int[] arr) { 
-        //int[] arr2 = new int[arr.length];
         int[] firstHalf = new int[arr.length/2];
         int[] secondHalf = new int[arr.length/2];
 
@@ -35,6 +34,8 @@ public class MyMain {
 
 
     public static void main(String[] args) {
-        // Write some code here to test your methods!
+        int[] arr = {1, 2, 3, 4, 5, 10, 11, 12, 13, 23};
+        System.out.println(Arrays.toString(perfectShuffle(arr)));
+        System.out.println(Arrays.toString(selectionShuffle(arr)));
     }
 }
